@@ -3,9 +3,13 @@
 }
 
 nav {
+  width: 90%;
   border-bottom: 10px solid orange;
+  margin: 40px;
 }
-
+nav h1{
+  font-size: 5rem;
+}
 ul {
   display : flex;
   justify-content: space-evenly;
@@ -18,18 +22,19 @@ a {
 
 
 li {
+  font-size: 3rem;
   list-style: none;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
+  margin-bottom: 5%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
-    margin-top: 50px;
   }
 }
 
@@ -55,4 +60,17 @@ li {
   to {
     transform: rotate(360deg);
   }
+}
+article img{
+  width: 50%;
+}
+section p{
+  max-width: 50%;
+  display:inline-flex;
+  margin-bottom: 5rem;
+}
+header h2{
+  margin-left: 3.5rem;
+  max-width: 85%;
+  align-items: center;
 }

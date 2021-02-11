@@ -1,18 +1,17 @@
-import React from 'react'
+import React from 'react';
+import '../App.css';
 
-function Article() {
+function Article({title, image, content, url, i}) {
+
     return (
         <article>
             <header>
-                <h2>Sample Article</h2>
-                <img src="https://via.placeholder.com/150" alt="placeholder"/>
+                <h2><a href={url} target="_blank">{title}</a></h2>
+                <img src={image} alt="image"/>
             </header>
             <main>
                 <section>
-                    <p>Sample Article Section 1</p>
-                </section>
-                <section>
-                    <p>Sample Article Section 2</p>
+                    <p>{content}</p>
                 </section>
             </main>
         </article>

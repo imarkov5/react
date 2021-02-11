@@ -1,15 +1,17 @@
-import React from 'react'
+import React from 'react';
+import logo from '../tek_logo.png';
+import {Link} from 'react-router-dom';
 
 function NavBar() {
     return (
         <nav>
-            <h1>TEK News</h1>
-            <span>Add your &lt;Link/&gt;'s to the Pages Here in the NavBar</span>
-            <p>You will need to use React Router's Navigation system as opposed to 'a' tags to achieve proper client side routing</p>
+            <h1><Link to="/">TEK News</Link></h1>
+            <img src={logo} className="App-logo" alt="logo" />
+
             <ul>
-                <li><a href="http://bit.ly/teksysacademy" target="_blank" rel="noreferrer">Sports</a></li>
-                <li><a href="http://bit.ly/teksysacademy" target="_blank" rel="noreferrer">Weather</a></li>
-                <li><a href="http://bit.ly/teksysacademy" target="_blank" rel="noreferrer">Politics</a></li>
+                <li><Link to="/sports">Sports</Link></li>
+                <li><Link to="/science">Science</Link></li>
+                <li><Link to="/technology">Technology</Link></li>
             </ul>
         </nav>
     )
